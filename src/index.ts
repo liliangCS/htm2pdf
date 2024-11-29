@@ -11,6 +11,7 @@ export const html2Pdf = ({ rootEl, options }: Html2PdfParams) => {
   const specialSplitClass = options.specialSplitClass ?? [];
   const specialSplitTag = options.specialSplitTag ?? [];
   const excludeSplitTag = options.excludeSplitTag ?? [];
+  const scale = options.scale ?? 1.5;
   let pageHeight = 0;
   let pageNum = 1;
 
@@ -98,7 +99,7 @@ export const html2Pdf = ({ rootEl, options }: Html2PdfParams) => {
     ctx?.scale(2, 2);
     ctx?.translate(-rootEl.offsetLeft - abs, -rootEl.offsetTop);
 
-    html2canvas(rootEl, { useCORS: true, scale: 1.5 }).then((canvas) => {
+    html2canvas(rootEl, { useCORS: true, scale: scale }).then((canvas) => {
       pageHeight = (A4_HEIGHT / A4_WIDTH) * canvas.width;
       // 定义未生成pdf的html页面高度
       let htmlHeight = canvas.height;

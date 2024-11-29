@@ -7,6 +7,7 @@ export type Html2PdfOptions = {
   specialSplitClass?: string[];
   specialSplitTag?: string[];
   excludeSplitTag?: string[];
+  scale?: number;
 };
 
 export type Html2PdfParams = {
