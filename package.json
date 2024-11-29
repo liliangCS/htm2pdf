@@ -1,14 +1,19 @@
 {
   "name": "htm2pdf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
   "keywords": [
-    "htm2pdf"
+    "htm2pdf",
+    "html2pdf"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liliangCS/htm2pdf"
+  },
   "author": "liliang",
   "license": "MIT",
   "description": "A tool for converting HTML to PDF",
