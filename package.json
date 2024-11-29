@@ -1,0 +1,26 @@
+{
+  "name": "htm2pdf",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "htm2pdf"
+  ],
+  "author": "liliang",
+  "license": "MIT",
+  "description": "A tool for converting HTML to PDF",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2"
+  }
+}
